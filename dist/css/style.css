@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  color: #fff;
+  background: #0d6efd;
+}
+
+/* */
+.nav-link {
+  font-weight: bold;
+}
+
+.txt-blue {
+  color: #0d47a1 !important;
+}
+
+.hero {
+  background: url("https://media.istockphoto.com/photos/stock-market-investment-graph-on-financial-numbers-abstract-picture-id1372263457?b=1&k=20&m=1372263457&s=170667a&w=0&h=nA0wg1Tf8DXSird1ea4iN6_tM7xHmVDryNqOWfK3soA=");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.cover {
+ background: rgb(0, 0, 0, .7);
+ height: 700px;
+}
+
+h3.title {
+  font-size: 35px;
+  position: relative;
+}
+
+h3.title:before,
+h3.title:after {
+  position: absolute;
+  background: #0d47a1;
+  width: 7%;
+  height: 2px;
+  content: " ";
+  bottom: -3%;
+}
+
+h3.title:before {
+  left: 48%;
+}
+
+h3.title:after {
+  bottom: -20%;
+  right: 48%;
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services .box {
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+.services h4 {
+  color: #000;
+  font-size: 20px;
+  font-weight: bolder;
+  transition: inherit;
+  transition-delay: 0.05s;
+  font-family: "Libre Baskerville", serif;
+}
+.services p {
+  color: #9e9e9e;
+  transition: inherit;
+  transition-delay: 0.1s;
+  font-size: 13px;
+}
+
+.box:hover i,
+.box:hover h4,
+.box:hover p {
+  transform: translateY(-0.625rem);
+}
+@keyframes ts-link-arrow-effect-animation-out {
+  0% {
+    transform-origin: right center;
+    transform: scaleX(0.2);
+  }
+
+  70% {
+    transform-origin: right center;
+  }
+
+  71% {
+    transform-origin: left center;
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform-origin: left center;
+    transform: scaleX(0.2);
+  }
+}
+@keyframes ts-link-arrow-effect-animation-in {
+  0% {
+    transform-origin: left center;
+    transform: scaleX(0.2);
+  }
+
+  70% {
+    transform-origin: left center;
+    transform: scaleX(1);
+  }
+
+  71% {
+    transform-origin: right center;
+  }
+
+  100% {
+    transform-origin: right center;
+    transform: scaleX(0.2);
+  }
+}
+
+/* who we are */
+
+.who_we_are .heading_container h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.who_we_are .row {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.who_we_are .detail-box p {
+  margin-top: 15px;
+  font-weight: 300;
+}
+
+.who_we_are .img-box {
+  position: relative;
+}
+
+.who_we_are .img-box img {
+  width: 100%;
+  /* position: absolute;
+  top: -3rem;
+  left: 3rem; */
+  z-index: 1;
+  /* -webkit-box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25); */
+}
+
+/* .who_we_are .img-box .another_sec {
+  background: #24374b;
+  height: 300px;
+}
+
+
+
+
+
+/* projects form */
+.g-form {
+  max-width: 850px;
+}
+
+form {
+  margin: 5px;
+}
+
+form small {
+  font-size: 13px;
+  color: #dc3545;
+}
+
+.form-control {
+  background: transparent;
+  transition: 0.3s ease-in;
+  border: 1px solid #0d47a1;
+  color: rgb(200, 200, 200);
+  outline: 0; 
+}
+.form-control:focus {
+ border: 1px solid #0d47a1;
+ color: rgb(200, 200, 200);
+ background: transparent;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+  color: rgb(212, 212, 212);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/*
+form.disabled {
+  pointer-events: none;
+  opacity: 0.7;
+}
+.c-form {
+  height: 50px;
+  display: flex;
+  background: transparent;
+  position: relative;
+  width: calc(100% / 2 - 13px);
+}
+form i {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  color: #ccc;
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .c-form input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 18px 0 48px;
+  font-size: 16px;
+  color: #ccc;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border: 2px solid #0d47a1;
+  background: none;
+}
+.field input::placeholder {
+  color: #ccc;
+}
+.field input:focus {
+  padding-left: 47px;
+  border: 1px solid #0d47a1;
+  box-shadow: 0 0 0 0.25rem #0d47a1;
+}
+.field input:focus ~ i {
+  color: #0d47a1;
+}
+*/
+form .button-area {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button, 
+  .button-area a {
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: 0;
+  display: inline-block;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 14px 21px;
+  font-size: 6pt;
+  background-color: #0d47a1;
+  transition: 0.3s ease;
+}
+.button-area button:hover,
+  .button-area a:hover {
+  transform: scale(1.2);
+}
+.button-area span {
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+  form {
+    margin: 35px 20px;
+  }
+
+  form .button-area {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+
+  .button-area span {
+    margin: 20px 0 0;
+    text-align: center;
+  }
+}
+
+/* redirect pop up */
+.popup-wrapper {
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  transform: .5s ease;
+  z-index: 99999999999;
+}
+
+
+
+.popup {
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 30px;
+  background: #fff;
+  position: relative;  
+}
+
+.popup-close {
+  position: absolute;
+  top: 11px;
+  right: 14px;
+  cursor: pointer;
+}
+
+
+
+
+@media screen and (min-width: 1025px) {
+  .who_we_are .img-box img {
+    left: 4rem;
+    top: -4rem;
+  }
+}
+@media (min-width: 770px) {
+ .and-one-more-break {
+  display: none !important;
+ } 
+}
+
+@media (max-width: 770px) {
+ .and-one-more-break {
+  display: block !important;
+ } 
+}

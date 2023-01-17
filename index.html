@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Links Tags-->
+  <link rel="stylesheet" href="dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+  <link rel="stylesheet" href="dist/css/slider.css" />
+  <!-- <link rel="stylesheet" href="dist/css/loader-test.css" /> -->
+  <link rel="stylesheet" href="dist/css/loader.css" />
+  <link rel="stylesheet" href="dist/css/slick-theme.min.css" />
+  <link rel="stylesheet" href="dist/css/slick.min.css" />
+  <link rel="stylesheet" href="dist/css/font-1.css" />
+  <link rel="stylesheet" href="dist/css/font-2.css" />
+  <!-- <link rel="stylesheet" href="dist/css/aos.css">  -->
+  <link rel="stylesheet" href="dist/css/style.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- preloader
+      <div class="loader">
+        <span>Loading...</span>
+      </div>
+      <!-- nav      -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 shadow" style="position: sticky; top: 0; z-index: 99">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href=""> Legit Exchange </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto ps-3 ps-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Trades">Trades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Exchange">Exchange Now</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-primary me-2" type="button">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  </nav>
+  <!-- nav      -->
+  <!-- hero  -->
+  <div class="mb-5 hero">
+    <div class="cover p-sm-1 p-md-5">
+      <br />
+      <br><br><br> <span class="and-one-more-break"><br></span>
+      <div class="container py-5">
+        <h1 data-aos="fade-up" data-aos-delay="500" data-aos-easing="ease-in-sine"
+          class="display-5 fw-bold ps-3 text-light text-uppercase" style="border-left: 2px solid #0d47a1">
+          The most
+          <span class="txt-blue">reliable <br />
+            Exchange
+          </span>
+          site.
+        </h1>
+        <br />
+        <p data-aos="fade-up" data-aos-delay="600" data-aos-easing="ease-in-sine"
+          class="col-12 col-md-6 fs-5 text-light fw-lighter">
+          Looking for a simple, fast, and reliable source to exchange or trade your crypto? look no further, Legit Exchange
+          is here to make things easy for you.
+        </p>
+        <br />
+        <div data-aos="fade-up" data-aos-delay="650" data-aos-easing="ease-in-sine" class="button-area">
+          <a href="" style="padding: 17px 27px; font-size: 9pt">
+            get started
+          </a>
+          <span></span>
+        </div>
+      </div>
+      <br />
+    </div>
+  </div>
+  <!-- hero  -->
+  <!-- redirect pop up -->
+  <div class="popup-wrapper">
+    <div class="popup">
+      <div class="popup-close">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="popup-content">
+        <h2 class="fw-bold" style="font-size: 80px;"><span class="text-success"><i
+          class="fas fa-check-circle"></i></span></h2>
+        <span style="font-size: 40px;font-weight: bolder;">&nbsp;Done</span>
+        <p style="color:#9e9e9e">
+          Thank you for contacting us, Your Form Inputs will be re-directed to Whatsapp shortly
+        </p>
+        <div class="button-area">
+          <a href="#0" class="popup-ait">
+            Close
+          </a>
+          <span></span>
+        </div>
+      </div>
+      <!-- div class="spinner-area">
+                                                                                                                                            <div class="circle">
+                                                                                                                                              <div class="spinner"></div>
+                                                                                                                                              <div class="inner-circle"></div>
+                                                                                                                                            </div>
+                                                                                                                                          </!-->
+    </div>
+  </div>
+  <!-- price chart  -->
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container" style="margin-top: -50px">
+    <div class="tradingview-widget-container__widget"></div>
+    <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Markets</span></a> by TradingView</div> -->
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+      async>
+      {
+        "symbols": [{
+          "proName": "BITSTAMP:BTCUSD",
+          "title": "Bitcoin"
+        },
+          {
+            "proName": "BITSTAMP:ETHUSD",
+            "title": "Ethereum"
+          },
+          {
+            "description": "Cardano",
+            "proName": "BITSTAMP:ADAUSD"
+          },
+          {
+            "description": "XRP",
+            "proName": "BITSTAMP:XRPUSD"
+          },
+          {
+            "description": "Litecoin",
+            "proName": "BITSTAMP:LTCUSD"
+          },
+          {
+            "description": "Dogecoin",
+            "proName": "BITTREX:DOGEUSD"
+          },
+          {
+            "description": "Tether",
+            "proName": "MEXC:DCUSDT"
+          },
+          {
+            "description": "Bitcoin Cash",
+            "proName": "COINBASE:BCHUSD"
+          },
+          {
+            "description": "Solana",
+            "proName": "COINBASE:SOLUSD"
+          },
+          {
+            "description": "Binance",
+            "proName": "BINANCE:BNBBUSD"
+          },
+          {
+            "description": "Shiba Inu",
+            "proName": "FTX:SHIBUSD"
+          },
+          {
+            "description": "Dash",
+            "proName": "KRAKEN:DASHUSD"
+          }],
+        "showSymbolLogo": true,
+        "colorTheme": "dark",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "en"
+      }
+    </script>
+  </div>
+  <!-- TradingView Widget END -->
+  <!-- price chart  -->
+  <!-- why chose us  -->
+  <br />
+  <div class="text-center mt-4" id="Services">
+    <h3 data-aos="flip-up" data-aos-delay="500" class="title">
+      Our
+      <span class="fw-bold text-uppercase" id="get_started">Services</span>
+    </h3>
+  </div>
+  <div class="services">
+    <div class="container">
+      <div class="row mt-4">
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600"
+          class="col-sm-12 col-md-4 mb-3 text-start">
+          <div class="card">
+            <img src="dist/images/crpton.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="text-uppercase">crypto exchange</h4>
+              <p class="card-text" style="font-size: 15px">
+                Looking for a simple, fast, and reliable source to exchange or trade your crypto? look no further, <a
+                  class="fw-bolder text-decoration-none" href="">Legit Exchange</a> is here to make things easy for you.
+              </p>
+              <div class="button-area">
+                <a href="#Exchange">
+                  get started
+                </a>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="700"
+          class="col-sm-12 col-md-4 mb-3 text-start">
+          <div class="card">
+            <img src="dist/images/Gift-card.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="text-uppercase">Gift Cards exchange</h4>
+              <p class="card-text" style="font-size: 15px">
+                As an all-in-one company, we offer exchanges of your gift cards like; Play store, Amazon, Apple, E.T.C.
+                Hit the "Get Started" to start.
+              </p>
+              <div class="button-area">
+                <a href="#Exchange">
+                  get started
+                </a>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="800"
+          class="col-sm-12 col-md-4 mb-3 text-start">
+          <div class="card">
+            <img src="dist/images/c_solution.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h4 class="text-uppercase">crypto solutions</h4>
+              <p class="card-text" style="font-size: 15px">
+                Want to invest in crypto and you have no idea how to start or you are having doubts about crypto tech
+                and need clarifications, contact us to get started.
+              </p>
+              <div class="button-area">
+                <a href="#Exchange">
+                  get started
+                </a>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <p style="color: #9e9e9e;" data-aos="zoom-in-up" data-aos-delay="600" data-aos-easing="ease-in-sine">
+          <span class="fw-bold">Welcome to <a href="" class="link-primary">Legit Exchange</a></span> a trusted and secure bitcoin and crypto exchange platform. We provide a gateway into the world of an open, transparent and secured financial system
+        </p>
+      </div>
+      <div class="col-12 col-md-6">
+        <p style="color: #9e9e9e;" data-aos="zoom-in-up" data-aos-delay="700" data-aos-easing="ease-in-sine">
+          Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Aperiam, expedita. Ad
+          dolor, alias assumenda modi, doloremque dignissimos dolores, quidem quasi accusantium quis repudiandae quae
+          quia fuga natus molestias a beatae laboriosam quisquam. Dignissimos quis natus eos quos delectus deserunt
+          molestias animi placeat veniam, nesciunt nam, at accusantium recusandae itaque ducimus optio illo? Cumque fuga
+          voluptates maiores ducimus ad optio nihil sapiente debitis cupiditate modi dolorem nemo ex culpa autem a
+          earum, explicabo provident facilis hic voluptatum enim nulla? Placeat, commodi sed. Incidunt omnis nisi
+          aspernatur laudantium laboriosam!
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="text-center mt-4" id="#Trades">
+    <h3 class="title" data-aos="flip-up" data-aos-delay="500">
+      Live <span class="fw-bold text-uppercase">Trades</span>
+    </h3>
+  </div>
+  <br />
+  <br />
+  <!-- TradingView Widget BEGIN -->
+  <div data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="600" class="container text-center"
+    style="height: 500px">
+    <p style="color: #9e9e9e; margin-top: -30px" class="small">
+      <i class="fas fa-info-circle"></i> Live trades happening on the crypto space.
+    </p>
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" id="Trades">
+      <div class="tradingview-widget-container__widget"></div>
+
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+        {
+          "width": "100%",
+          "height": "100%",
+          "defaultColumn": "overview",
+          "screener_type": "crypto_mkt",
+          "displayCurrency": "USD",
+          "colorTheme": "light",
+          "locale": "en"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+  </div>
+  <br />
+
+  <section class="bg-dark">
+
+  </section>
+
+  <!-- TradingView Widget END -->
+  <br />
+  <br />
+  <section class="projects_sec bg-dark" style="padding: 80px 0 50px 0" id="Exchange">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+          <span style="font-size: 14px; color: rgba(255, 255, 255, 0.782)" class="test text-uppercase"
+            data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Contact Us</span>
+          <br />
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" style="font-weight:   bolder"
+            class="my-2 text-uppercase text-white">
+            Contact us to get started
+          </h2>
+          <br />
+        </div>
+        <div class="col-8 text-center">
+          <p style="color: #9e9e9e; margin-top: -20px" class="small">
+            <i class="fas fa-info-circle"></i> Fill in the form to get started on your exchange.
+          </p>
+          <form action="#" autocomplete="false" class="mt-4">
+            <div class="row" data-aos="fade-up" data-aos-delay="600">
+              <div class="col-12 col-lg-4 img-fluid mb-4">
+                <img src="dist/images/logo.png" alt="logo">
+              </div>
+
+              <div class="col-12 col-lg-8 text-start">
+                <form>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address <span class="text-danger">*</span></label>
+                    <input type="email" class="form-control" name="email" placeholder="Email" required>
+                    <small class="one"></small>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name <span class="text-danger">*</span></label>
+                    <input type="text" class="form-control" name="fullName" placeholder="Full Name" required>
+                    <small class="two"></small>
+                  </div>
+
+                  <div class="">
+                    <label for="phoneNumber" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                    <input type="phone" class="form-control" name="phoneNumber" placeholder="Phone Number" required>
+                    <small class="three"></small>
+                  </div>
+                </form>
+                <div class="button-area">
+                  <button type="submit">Contact Us</button>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- what our clients says  -->
+
+  <br /><br />
+  <div class="text-center mt-4">
+    <h3 class="title text-capitalize">
+      our <span class="fw-bold text-uppercase">TESTIMONIALS</span>
+    </h3>
+  </div>
+  <br />
+  <section>
+    <div class="testimonial">
+      <div class="container">
+        <div class="testimonial__inner">
+          <div class="testimonial-slider">
+            <div class="testimonial-slide">
+              <div class="testimonial_box">
+                <div class="testimonial_box-inner">
+                  <div class="testimonial_box-top">
+                    <div class="testimonial_box-icon">
+                      <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial_box-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Delectus optio facilis beatae.
+                      </p>
+                    </div>
+                    <div class="testimonial_box-shape"></div>
+                  </div>
+                  <div class="testimonial_box-bottom">
+                    <div class="testimonial_box-profile">
+                      <div class="testimonial_box-img">
+                        <img src="dist/images/profile-1.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-info">
+                        <div class="testimonial_box-name">
+                          <h4>John Doe</h4>
+                        </div>
+                        <div class="testimonial_box-job">
+                          <p>
+                            MANAGER
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial_box">
+                <div class="testimonial_box-inner">
+                  <div class="testimonial_box-top">
+                    <div class="testimonial_box-icon">
+                      <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial_box-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Delectus optio facilis beatae.
+                      </p>
+                    </div>
+                    <div class="testimonial_box-shape"></div>
+                  </div>
+                  <div class="testimonial_box-bottom">
+                    <div class="testimonial_box-profile">
+                      <div class="testimonial_box-img">
+                        <img src="dist/images/profile-2.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-info">
+                        <div class="testimonial_box-name">
+                          <h4>John Doe</h4>
+                        </div>
+                        <div class="testimonial_box-job">
+                          <p>
+                            CEO
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial_box">
+                <div class="testimonial_box-inner">
+                  <div class="testimonial_box-top">
+                    <div class="testimonial_box-icon">
+                      <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial_box-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Delectus optio facilis beatae.
+                      </p>
+                    </div>
+                    <div class="testimonial_box-shape"></div>
+                  </div>
+                  <div class="testimonial_box-bottom">
+                    <div class="testimonial_box-profile">
+                      <div class="testimonial_box-img">
+                        <img src="dist/images/profile-3.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-info">
+                        <div class="testimonial_box-name">
+                          <h4>John Doe</h4>
+                        </div>
+                        <div class="testimonial_box-job">
+                          <p>
+                            MANAGER
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="testimonial_box">
+                <div class="testimonial_box-inner">
+                  <div class="testimonial_box-top">
+                    <div class="testimonial_box-icon">
+                      <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial_box-text">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Delectus optio facilis beatae.
+                      </p>
+                    </div>
+                    <div class="testimonial_box-shape"></div>
+                  </div>
+                  <div class="testimonial_box-bottom">
+                    <div class="testimonial_box-profile">
+                      <div class="testimonial_box-img">
+                        <img src="dist/images/profile-4.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-info">
+                        <div class="testimonial_box-name">
+                          <h4>John Doe</h4>
+                        </div>
+                        <div class="testimonial_box-job">
+                          <p>
+                            CEO
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer  -->
+  <!--   footer-->
+  <br />
+  <div class="container-fluid" style="margin-bottom: -30px;background-color: #e5e5e5;">
+    <footer class="
+      d-flex
+      flex-wrap
+      justify-content-between
+      align-items-center
+      py-3
+      my-4
+      border-top
+      ">
+      <p class="col-md-4 mb-0 text-muted fw-bolder">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Legit Exchange
+      </p>
+
+      <a href="/" class="
+        col-md-4
+        d-flex
+        align-items-center
+        justify-content-center
+        mb-3 mb-md-0
+        me-md-auto
+        link-dark
+        text-decoration-none
+        ">
+        <img src="dist/images/logo1.png" style="width: 80px; height: 80px" alt="AYF LOGO" />
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item">
+          <a href="#" class="fw-bolder nav-link px-2 text-muted">Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="fw-bolder nav-link px-2 text-muted">Twitter</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="fw-bolder nav-link px-2 text-muted">Instagram
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </div>
+  <!--    //footer-->
+
+  <script src="dist/js/bootstrap.bundle.js"></script>
+  <script src="dist/js/bootstrap.js"></script>
+  <script src="dist/js/slick.min.js"></script>
+  <!-- <script src="dist/js/aos.js"></script> -->
+  <script src="dist/js/script.js"></script>
+  <script src="dist/js/drift.js"></script>
+  <script src="dist/js/loader.js"></script>
+  <script>
+
+    //Testimonial slider
+    $(document).ready(function () {
+      $(".testimonial-slider").slick({
+        autoplay: true,
+        autoplaySpeed: 3000,
+        speed: 800,
+        draggable: false,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        dots: true,
+        responsive: [{
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 2, slidesToScroll: 1
+          },
+        },
+          {
+            breakpoint: 575,
+            settings: {
+              slidesToShow: 1, slidesToScroll: 1
+            },
+          },
+        ],
+      });
+    });
+
+  </script>
+</body>
+
+</html>
